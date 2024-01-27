@@ -36,7 +36,7 @@ function Filter({ queryName, setQueryName, queryCompany, setQueryCompany, queryP
         </select>
       </div>
       <div className="me-4">
-        <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        <label htmlFor="default-range" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
           Price {">"}= {queryPrice}
         </label>
         <input
@@ -46,11 +46,11 @@ function Filter({ queryName, setQueryName, queryCompany, setQueryCompany, queryP
           value={queryPrice}
           onChange={(e) => setQueryPrice(e.target.value)}
           type="range"
-          class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
         />
       </div>
       <div className="me-4">
-        <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        <label htmlFor="default-range" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
           Rating {">"}= {queryRating}
         </label>
         <input
@@ -61,7 +61,7 @@ function Filter({ queryName, setQueryName, queryCompany, setQueryCompany, queryP
           step={0.01}
           onChange={(e) => setQueryRating(e.target.value)}
           type="range"
-          class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
         />
       </div>
       <div className="me-4">
@@ -69,7 +69,7 @@ function Filter({ queryName, setQueryName, queryCompany, setQueryCompany, queryP
           type="submit"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          Submit
+          Search
         </button>
       </div>
     </form>
